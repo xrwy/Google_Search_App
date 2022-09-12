@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Google Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/page.css')}}">
+</head>
+<body>
+    <div>
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-2">
+                        <h2 class="heading-section">Python Google Search</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-lg-8">
+                        <div class="wrap">
+                            <div class="img" style="background-image:url('./static/img/beach.jpg')">
+                            </div>
+                            <div class="login-wrap p-md-4">
+                                <div class="d-flex">
+                                    <div class="w-100">
+                                        <h3 class="mb-4" style="font-size:22px">Python Google Search App</h3>
+                                    </div>
+                                </div>
+                                <form method="post" action="/search_result" class="signin-form">
+                                    <div class="form-group mt-3">
+                                        <input type="text" class="form-control" required="true" name="keyword">
+                                        <label class="form-control-placeholder" for="keyword">Keyword to Search</label>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" class="form-control" required="true" name="number_of_results">
+                                        <label class="form-control-placeholder" for="number_of_results">The number of results we want</label>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" class="form-control" required="true" name="final_result">
+                                        <label class="form-control-placeholder" for="final_result">Final Result</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="form-control btn btn-primary rounded submit px-4" style="font-size: 17px;">Browse and Show Results</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html
+
